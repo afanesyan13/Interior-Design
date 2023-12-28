@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.main {
+    display: flex;
+    width: 100%;
+    max-width: 1366px;
+
+    // Start Header Menu
+    .header {
+        background-color: #f44336;
+
+        width: 310px;
+        overflow: auto;
+    }
+    .menu-title {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-size: 24px;
+        padding: 90px 33px 26px;
+        position: fixed;
+    }
+    .menu-lists {
+        max-width: 253px;
+        box-sizing: border-box;
+        display: block;
+        text-align: left;
+        padding: 65px 0px 0px 30px;
+        position: fixed;
+        top: 160px;
+    }
+    .main-links {
+        list-style: none;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+    }
+    .main-links:hover {
+        background-color: white;
+        cursor: pointer;
+    }
+    .menu-link {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .main-links:hover .menu-link {
+        color: black;
+    }
+    // End Header Menu
+
+    // Start General Container
+    .general-container {
+        max-width: 1040px;
+
+        .title-container {
+            margin: 70px 50px 0;
+        }
+        .design-title {
+            font-size: 64px;
+        }
+        .contents-title {
+            font-size: 48px;
+            color: #f44336;
+            margin: 17px 0 15px 0;
+        }
+        .round {
+            width: 70px;
+            border: 5px solid red;
+            border-radius: 4px;
+        }
+
+        // Start Interior Design Container
+        .img-container {
+            display: flex;
+            margin-left: -10px;
+            margin-top: 30px;
+        }
+        .first-container-img {
+            border-radius: 3%;
+            padding: 5px 10px;
+            opacity: 0.7;
+        }
+        .first-container-img:hover {
+            opacity: 1;
+            cursor: pointer;
+        }
+        // End  Interior Design Container
+    }
+    // End Main Container
+
+    // Start Serice Container
+    .service-container {
+        margin: 80px 50px 0 50px;
+    }
+    // End Service Container
+
+    // Start Design container
+    .design-container {
+        margin: 80px 50px 0 50px;
+        .about-desihners-img-container-title {
+            font-weight: 700;
+            margin: 30px 0;
+        }
+        .designers-img-container {
+            display: flex;
+            margin-left: -10px;
+
+            .staff-img {
+                background-color: #f1f1f1 !important;
+                margin: 0 10px;
+
+                .designer-img {
+                    filter: saturate(30%);
+                }
+                .designer-name {
+                    font-size: 24px;
+                    font-weight: 400;
+                    padding: 0 10px;
+                }
+
+                .about-designer-subtitle {
+                    opacity: 0.6;
+                    margin: 30px 0;
+                    padding: 0 10px;
+                }
+
+                .description {
+                    margin: 30px 0;
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+
+    // End Design Container
+
+    // Start Package Container
+    .package-container {
+        margin: 80px 50px 0 50px;
+
+        .package-container-text {
+            margin: 30px 0 10px 0;
+        }
+
+        .package-list-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .package-list {
+            display: flex;
+            flex-direction: column;
+            color: #000 !important;
+            background-color: #f1f1f1 !important;
+        }
+        .lists-container {
+            list-style: none;
+        }
+        .first-list-title {
+            color: #fff !important;
+            background-color: #616161 !important;
+            font-size: 24px;
+        }
+        .lists {
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+            padding: 32px 145px;
+        }
+        .second-list-title {
+            color: #fff !important;
+            background-color: #f44336 !important;
+            font-size: 24px;
+        }
+        .first-list-button {
+            border: none;
+            background-color: white;
+            color: #000;
+            padding: 12px 24px;
+        }
+        .first-list-button:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        .second-list-button {
+            color: #fff;
+            background-color: #f44336;
+            padding: 12px 24px;
+            border: none;
+        }
+
+        .second-list-button:hover {
+            background-color: black;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .dollar-price {
+            font-size: 30px;
+        }
+        .dollar-discription {
+            opacity: 0.6;
+        }
+    }
+    // End Package Container
+
+    // Start Contact Container
+    .contact-container {
+        margin: 80px 50px 0 50px;
+        .interior-contents-contact-imput {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 30px;
+        }
+        .contact-container-button {
+            width: 100%;
+            background-color: #f44336;
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            text-align: center;
+        }
+        .contact-container-button:hover {
+            background-color: #b1aeae;
+            color: #000;
+            cursor: pointer;
+        }
+    }
+
+    // End Contact Container
+
+    // Footer
+    .footer {
+        margin-top: 75px;
+        color: #000 !important;
+        background-color: #f1f1f1 !important;
+        text-align: right;
+        padding: 40px 51px 30px 0;
+        font-size: 14px;
+        .footer-link {
+            font-size: 14px;
+            color: #000;
+        }
+        .footer-link:hover {
+            opacity: 0.6;
+        }
+    }
+}
