@@ -70,6 +70,16 @@
             color: #f44336;
             margin: 17px 0 15px 0;
         }
+        .contents-title::after {
+            content: "";
+            display: block;
+            margin-top: 20px;
+            width: 60px;
+            background-color: red;
+            border-radius: 4px;
+            height: 10px;
+          }
+          
     }
 
     // Start Interior Design Container
