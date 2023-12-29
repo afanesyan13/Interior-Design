@@ -66,6 +66,16 @@
   color: #f44336;
   margin: 17px 0 15px 0;
 }
+.contents-title::after {
+  content: "";
+  display: block;
+  margin-top: 20px;
+  width: 60px;
+  background-color: red;
+  border-radius: 4px;
+  height: 10px;
+}
+
 .main .general-container .round {
   width: 70px;
   border: 5px solid red;
@@ -217,4 +227,4 @@
 }
 .main .footer .footer-link:hover {
   opacity: 0.6;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
