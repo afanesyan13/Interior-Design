@@ -7,6 +7,63 @@
   line-height: 1.5;
 }
 
+@media screen and (max-width: 992px) {
+  .header {
+      min-width: 992px;
+      height: 67px;
+      position: fixed;
+      z-index: 2;
+  }
+  .menu-title {
+      margin-top: -75px;
+      font-weight: normal;
+  }
+  .menu-title br {
+      display: none;
+  }
+  .all-links {
+      display: none;
+  }
+  .general-container {
+      max-width: 992px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+      min-width: 600px;
+      height: 67px;
+      position: fixed;
+      z-index: 2;
+  }
+  .menu-title {
+      margin-top: -75px;
+      font-weight: normal;
+  }
+  .menu-title br {
+      display: none;
+  }
+  .all-links {
+      display: none;
+  }
+  .general-container {
+      max-width: 600px;
+  }
+  .img-container {
+      display: flex;
+      flex-direction: column;
+  }
+  .designers-img-container {
+      display: flex;
+      flex-direction: column;
+  }
+  .package-list-container {
+      display: flex;
+      flex-direction: column;
+  }
+}
+
+
 .main {
   display: flex;
   justify-content: space-between;
@@ -228,60 +285,3 @@
   opacity: 0.6;
 }
 
-@media screen and (max-width: 992px) {
-  .header {
-      
-      min-width: 992px;
-      height: 67px;
-      position: fixed;
-      z-index: 2;
-  }
-  .menu-title {
-      margin-top: -75px;
-      font-weight: normal;
-  }
-  .menu-title br {
-      display: none;
-  }
-  .all-links {
-      display: none;
-  }
-  .general-container {
-      max-width: 992px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .header {
-   
-    min-width: 600px;
-    height: 67px;
-    position: fixed;
-    z-index: 2;
-}
-.menu-title {
-  margin-top: -75px;
-  font-weight: normal;
-}
-.menu-title br {
-  display: none;
-}
-.all-links {
-  display: none;
-}
-.general-container {
-  max-width: 600px;
-}
-.img-container{
-  display: flex;
-  flex-direction: column;
-}
-.designers-img-container{
-  display: flex;
-  flex-direction: column;
-}
-.package-list-container{
-  display: flex;
-  flex-direction: column;
-}
-}

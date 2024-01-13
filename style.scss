@@ -258,15 +258,14 @@
     }
 }
 
-@media screen and (max-width:992px) {
-    .main{
+@media screen and (max-width: 992px) {
+    .main {
         display: block;
-        
     }
-    .header{
+    .header {
         display: flex;
     }
-    .menu-lists{
+    .menu-lists {
         display: flex;
     }
 }
