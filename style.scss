@@ -8,15 +8,13 @@
 }
 .main {
     display: flex;
-    width: 100%;
-    max-width: 1366px;
+    justify-content: space-between;
 
     // Start Header Menu
     .header {
         background-color: #f44336;
-
-        width: 310px;
-        overflow: auto;
+        width: 300px;
+        padding: 0 113px 0 0;
     }
     .menu-title {
         display: flex;
@@ -24,7 +22,6 @@
         color: white;
         font-size: 24px;
         padding: 90px 33px 26px;
-        position: fixed;
     }
     .menu-lists {
         max-width: 253px;
@@ -32,13 +29,13 @@
         display: block;
         text-align: left;
         padding: 65px 0px 0px 30px;
-        position: fixed;
         top: 160px;
     }
     .main-links {
         list-style: none;
         margin-bottom: 10px;
         padding: 5px 10px;
+        width: 160%;
     }
     .main-links:hover {
         background-color: white;
@@ -57,7 +54,7 @@
 
     // Start General Container
     .general-container {
-        max-width: 1040px;
+        width: max-content;
 
         .title-container {
             margin: 70px 50px 0;
@@ -72,14 +69,13 @@
         }
         .contents-title::after {
             content: "";
-            display: block;
+            display: flex;
             margin-top: 20px;
             width: 60px;
             background-color: red;
             border-radius: 4px;
             height: 10px;
-          }
-          
+        }
     }
 
     // Start Interior Design Container
@@ -93,6 +89,7 @@
         border-radius: 3%;
         padding: 5px 10px;
         opacity: 0.7;
+        transition: 0.3s ease-out;
     }
     .first-container-img:hover {
         opacity: 1;
@@ -258,5 +255,18 @@
     }
     .footer-link:hover {
         opacity: 0.6;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .main{
+        display: block;
+        
+    }
+    .header{
+        display: flex;
+    }
+    .menu-lists{
+        display: flex;
     }
 }

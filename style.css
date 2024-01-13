@@ -9,13 +9,12 @@
 
 .main {
   display: flex;
-  width: 100%;
-  max-width: 1366px;
+  justify-content: space-between;
 }
 .main .header {
   background-color: #f44336;
-  width: 310px;
-  overflow: auto;
+  width: 300px;
+  padding: 0 113px 0 0;
 }
 .main .menu-title {
   display: flex;
@@ -23,7 +22,6 @@
   color: white;
   font-size: 24px;
   padding: 90px 33px 26px;
-  position: fixed;
 }
 .main .menu-lists {
   max-width: 253px;
@@ -31,13 +29,13 @@
   display: block;
   text-align: left;
   padding: 65px 0px 0px 30px;
-  position: fixed;
   top: 160px;
 }
 .main .main-links {
   list-style: none;
   margin-bottom: 10px;
   padding: 5px 10px;
+  width: 160%;
 }
 .main .main-links:hover {
   background-color: white;
@@ -53,7 +51,8 @@
   color: black;
 }
 .main .general-container {
-  max-width: 1040px;
+  width: -moz-max-content;
+  width: max-content;
 }
 .main .general-container .title-container {
   margin: 70px 50px 0;
@@ -68,7 +67,7 @@
 }
 .main .general-container .contents-title::after {
   content: "";
-  display: block;
+  display: flex;
   margin-top: 20px;
   width: 60px;
   background-color: red;
@@ -84,6 +83,7 @@
   border-radius: 3%;
   padding: 5px 10px;
   opacity: 0.7;
+  transition: 0.3s ease-out;
 }
 .main .first-container-img:hover {
   opacity: 1;
@@ -226,4 +226,16 @@
 }
 .footer .footer-link:hover {
   opacity: 0.6;
+}
+
+@media screen and (max-width: 992px) {
+  .main {
+    display: block;
+  }
+  .header {
+    display: flex;
+  }
+  .menu-lists {
+    display: flex;
+  }
 }/*# sourceMappingURL=style.css.map */
